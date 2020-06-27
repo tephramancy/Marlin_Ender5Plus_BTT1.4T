@@ -247,8 +247,8 @@ Board name: FYSETCV1_1A, FYSETCV1_1B, FYSETCV1_2A, FYSETCV1_2B, change_value = S
 /*** *** *** Section 10 - If you have a sensor installed, choose the one you're using. Skip this section if you DO NOT have an auto bed levelling sensor installed *** *** ****/
 
 //#define KAVA_SENSOR
-#define BLTOUCH_v3_v3_1 //define this ONLY if your bltouch is version 3 or 3.1. Check at the back of BLtouch's board if you are unsure
 #define BLTOUCH //define this if you have a BL touch REGARDLESS of your BLtouch version
+#define BLTOUCH_v3_v3_1 //define this ONLY if your bltouch is version 3 or 3.1. Check at the back of BLtouch's board if you are unsure
 //#define FIX_MOUNTED_PROBE //define this if you have a fixed probe sensor - capacitive sensor
 //#define TOUCH_MI_PROBE // define this if you have a TOUCH-MI sensor.
 
@@ -271,7 +271,7 @@ Board name: FYSETCV1_1A, FYSETCV1_1B, FYSETCV1_2A, FYSETCV1_2B, change_value = S
 
 #if ENABLED (Manual_mesh_bed_level) // ignore this code
 
-#define MESH_INSET 10 // Change this value to 20 if you have clips holding down your print surface. 10 is a good value if you don't have clips. This is how far you want your nozzle to probe from the EDGES of the bed
+#define MESH_INSET 20 // Change this value to 20 if you have clips holding down your print surface. 10 is a good value if you don't have clips. This is how far you want your nozzle to probe from the EDGES of the bed
 
 #endif // ignore this code
 
